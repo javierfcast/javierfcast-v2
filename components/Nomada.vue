@@ -30,17 +30,7 @@
         <p>I have been helping them for the last two years with the development of spacial interactive coverages and technical support.</p>
       </div>
       <div class="project-images animate basic-animation">
-        <Slider
-          v-bind:imgs="[
-            '/projects/nomada/nudismo-politico/nomada_nudismo_politico-4.jpg',
-            '/projects/nomada/nudismo-politico/nomada_nudismo_politico.jpg',
-            '/projects/nomada/nudismo-politico/nomada_nudismo_politico-1.jpg',
-            '/projects/nomada/nudismo-politico/nomada_nudismo_politico-3.jpg',
-            '/projects/nomada/elecciones/nomada_elecciones_2_segunda.jpg',
-            '/projects/nomada/elecciones/nomada_elecciones_7.jpg',
-            '/projects/nomada/elecciones/nomada_elecciones_8_wikielectoral.jpg'
-          ]"
-        />
+        <Slider v-bind="project"/>
       </div>
     </div>
   </div>
@@ -51,6 +41,21 @@ import Slider from "~/components/Slider.vue";
 export default {
   components: {
     Slider
+  },
+  data() {
+    return {
+      project: {
+        lead: "Lorem ipsum dolor sit amet",
+        background: "light",
+        imgs: [
+          "/projects/nomada/nudismo-politico/nomada_nudismo_politico-4.jpg",
+          "/projects/nomada/nudismo-politico/nomada_nudismo_politico.jpg",
+          "/projects/nomada/nudismo-politico/nomada_nudismo_politico-3.jpg",
+          "/projects/nomada/elecciones/nomada_elecciones_2_segunda.jpg",
+          "/projects/nomada/elecciones/nomada_elecciones_7.jpg"
+        ]
+      }
+    };
   }
 };
 </script>

@@ -160,11 +160,18 @@ p {
     transform: translateY(0);
   }
 }
-.swiper-pagination-bullet {
-  width: 40px !important;
-  height: 1px !important;
-  border-radius: 0 !important;
-  margin-left: 5px;
-  background: white !important;
+.swiper {
+  .swiper-pagination-bullet {
+    width: 20px !important;
+    height: 1px !important;
+    border-radius: 0 !important;
+    margin-left: 5px;
+    background: $black !important;
+  }
+  &.dark {
+    .swiper-pagination-bullet {
+      background: white !important;
+    }
+  }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="swiper">
+  <div :class="`${background} swiper`">
     <div v-swiper:mySwiper="options">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="banner in banners" :key="banner">
@@ -21,7 +21,8 @@ export default {
     swiper: directive
   },
   props: {
-    imgs: Array
+    imgs: Array,
+    background: String
   },
   data: function() {
     return {
@@ -42,6 +43,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "./assets/_mixins.scss";
 .swiper {
   position: relative;
   .swiper-pagination {
@@ -54,7 +56,7 @@ export default {
     width: 30px;
     height: 30px;
     bottom: -30px;
-    color: white;
+    color: $black;
     left: auto;
     &:after {
       font-size: 12px;
@@ -68,6 +70,12 @@ export default {
   }
   .swiper-image {
     width: 100%;
+  }
+  &.dark {
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: white;
+    }
   }
 }
 </style>
