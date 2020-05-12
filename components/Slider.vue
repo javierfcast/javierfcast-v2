@@ -3,13 +3,13 @@
     <div v-swiper:mySwiper="options">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="https://via.placeholder.com/1200x1200">
+          <img class="swiper-image" src="https://via.placeholder.com/1200x1200">
         </div>
         <div class="swiper-slide">
-          <img src="https://via.placeholder.com/1600x1600">
+          <img class="swiper-image" src="https://via.placeholder.com/1600x1600">
         </div>
         <div class="swiper-slide">
-          <img src="https://via.placeholder.com/1400x1400">
+          <img class="swiper-image" src="https://via.placeholder.com/1400x1400">
         </div>
       </div>
     </div>
@@ -67,6 +67,9 @@ export default {
   }
   .swiper-button-next {
     right: -10px;
+  }
+  .swiper-image {
+    width: 100%;
   }
 }
 </style>

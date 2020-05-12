@@ -28,6 +28,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import Slider from "~/components/Slider.vue";
 
@@ -37,6 +38,7 @@ export default {
   }
 };
 </script>
+
 <style lang="scss" scoped>
 @import "./assets/_mixins.scss";
 
@@ -93,9 +95,6 @@ export default {
     margin-top: 0;
     margin-left: 10%;
     width: 50%;
-  }
-  img {
-    width: 100%;
   }
 }
 </style>
