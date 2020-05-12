@@ -30,38 +30,27 @@
         <p>I have been helping them for the last two years with the development of spacial interactive coverages and technical support.</p>
       </div>
       <div class="project-images animate basic-animation">
-        <div v-swiper:mySwiper="options">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://via.placeholder.com/1200x1200">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://via.placeholder.com/1600x1600">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://via.placeholder.com/1400x1400">
-            </div>
-          </div>
-        </div>
+        <Slider
+          v-bind:imgs="[
+            '/projects/nomada/nudismo-politico/nomada_nudismo_politico-4.jpg',
+            '/projects/nomada/nudismo-politico/nomada_nudismo_politico.jpg',
+            '/projects/nomada/nudismo-politico/nomada_nudismo_politico-1.jpg',
+            '/projects/nomada/nudismo-politico/nomada_nudismo_politico-3.jpg',
+            '/projects/nomada/elecciones/nomada_elecciones_2_segunda.jpg',
+            '/projects/nomada/elecciones/nomada_elecciones_7.jpg',
+            '/projects/nomada/elecciones/nomada_elecciones_8_wikielectoral.jpg'
+          ]"
+        />
       </div>
     </div>
   </div>
 </template>
 <script>
-import { directive } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
+import Slider from "~/components/Slider.vue";
 
 export default {
-  directives: {
-    swiper: directive
-  },
-  data() {
-    return {
-      options: {
-        slidesPerView: 1,
-        loop: true
-      }
-    };
+  components: {
+    Slider
   }
 };
 </script>

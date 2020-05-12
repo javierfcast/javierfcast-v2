@@ -2,14 +2,8 @@
   <div class="swiper">
     <div v-swiper:mySwiper="options">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="swiper-image" src="https://via.placeholder.com/1200x1200">
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-image" src="https://via.placeholder.com/1600x1600">
-        </div>
-        <div class="swiper-slide">
-          <img class="swiper-image" src="https://via.placeholder.com/1400x1400">
+        <div class="swiper-slide" v-for="banner in banners" :key="banner">
+          <img :src="banner" class="swiper-image">
         </div>
       </div>
     </div>
@@ -26,8 +20,12 @@ export default {
   directives: {
     swiper: directive
   },
-  data() {
+  props: {
+    imgs: Array
+  },
+  data: function() {
     return {
+      banners: this.imgs,
       options: {
         slidesPerView: 1,
         loop: true,

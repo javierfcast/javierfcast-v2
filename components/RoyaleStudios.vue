@@ -23,7 +23,7 @@
         </p>
       </div>
       <div class="project-images animate basic-animation">
-        <Slider/>
+        <Slider v-bind:imgs="project.imgs"/>
       </div>
     </div>
   </div>
@@ -35,6 +35,20 @@ import Slider from "~/components/Slider.vue";
 export default {
   components: {
     Slider
+  },
+  data: function() {
+    return {
+      project: {
+        lead: "Lorem ipsum dolor sit amet",
+        imgs: [
+          "/projects/royalestudios/royale_texture.jpg",
+          "/projects/royalestudios/royale_posts.jpg",
+          "/projects/royalestudios/royale_business_cards.jpg",
+          "/projects/royalestudios/royale_website.jpg",
+          "/projects/royalestudios/royale_ad.jpg"
+        ]
+      }
+    };
   }
 };
 </script>
