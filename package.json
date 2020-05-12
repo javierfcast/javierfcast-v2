@@ -1,0 +1,24 @@
+{
+  "name": "javierfcast-v2",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "author": "Nuxt.js Team",
+  "private": true,
+  "scripts": {
+    "dev": "MINIMAL=1 CSB=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "@nuxt/http": "^0.4.0",
+    "node-sass": "4.14.0",
+    "nuxt": "^2.12.2",
+    "reqlim": "^0.0.0",
+    "sass-loader": "8.0.2",
+    "swiper": "5.3.8",
+    "vue-awesome-swiper": "4.1.1"
+  },
+  "keywords": []
+}

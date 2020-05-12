@@ -1,0 +1,170 @@
+<template>
+  <Nuxt/>
+</template>
+<script>
+export default {
+  mounted: function() {
+    //Animate all elements with class animate-me
+    const animateMe = document.querySelectorAll(".animate");
+
+    let observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+          console.log(entry.target + "in view");
+          entry.target.classList.add("animated");
+          observer.unobserve(entry.target);
+        } else {
+          console.log("out of view");
+        }
+      });
+    });
+
+    animateMe.forEach(el => {
+      observer.observe(el);
+    });
+  }
+};
+</script>
+<style lang="scss">
+@import "./assets/_mixins.scss";
+//Generic, Utility Classes
+html {
+  font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  font-weight: regular;
+  font-size: 12px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: $black;
+  @include bp(s720) {
+    font-size: 14px;
+  }
+  @include bp(s1280) {
+    font-size: 16px;
+  }
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+h1,
+.jf-h1 {
+  @include h1;
+}
+h2,
+.jf-h2 {
+  @include h2;
+}
+h3,
+.jf-h3 {
+  @include h3;
+}
+h4,
+.jf-h4 {
+  @include h4;
+}
+h5,
+.jf-h5 {
+  @include h5;
+}
+h6,
+.jf-h6 {
+  @include h6;
+}
+a {
+  text-decoration: none;
+  color: $black;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+  font-weight: bold;
+  &:hover {
+    border-bottom: 2px solid $black;
+  }
+}
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.jf-label {
+  @include label;
+}
+.jf-lead {
+  margin-bottom: 20px;
+}
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.jf-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  @include padding-top;
+  @include padding-bottom;
+  @include padding-left;
+  @include padding-right;
+  &.jf-container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+.jf-spacer {
+  margin-bottom: 40px;
+}
+.jf-date {
+  display: flex;
+  align-items: center;
+  .jf-date__line {
+    height: 1px;
+    background: black;
+    margin: 10px;
+    transition-delay: 4s;
+    @include transition(all, 1s);
+  }
+  .second-date {
+    opacity: 0;
+    transition-delay: 5s;
+    @include transition(all, 1s);
+  }
+  &.animated {
+    .jf-date__line {
+      flex: 1 1 auto;
+    }
+    .second-date {
+      opacity: 1;
+    }
+  }
+}
+.basic-animation {
+  opacity: 0;
+  transform: translateY(200px);
+  @include transition(all, 2s);
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.swiper-pagination-bullet {
+  width: 40px !important;
+  height: 1px !important;
+  border-radius: 0 !important;
+  margin-left: 5px;
+  background: white !important;
+}
+</style>
