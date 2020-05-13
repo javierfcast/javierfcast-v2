@@ -28,9 +28,13 @@
           class="jf-lead"
         >Nómada is an independent digital news media company with investigative reporters that covers politics, feminism, ecuality and culture in Guatemala.</h4>
         <p>I have been helping them for the last two years with the development of spacial interactive coverages and technical support.</p>
+        <span class="jf-label">Visit</span>
+        <p>
+          <a href="https://yalochat.com/">nomada.gt</a>
+        </p>
       </div>
       <div class="project-images animate basic-animation">
-        <Slider v-bind="project"/>
+        <Slider v-bind="gallery"/>
       </div>
     </div>
   </div>
@@ -44,8 +48,7 @@ export default {
   },
   data() {
     return {
-      project: {
-        lead: "Lorem ipsum dolor sit amet",
+      gallery: {
         background: "light",
         imgs: [
           "/projects/nomada/nudismo-politico/nomada_nudismo_politico-4.jpg",
@@ -107,13 +110,11 @@ export default {
   }
 }
 .project-images {
+  width: 100%;
   margin-top: 40px;
   @include bp(s720) {
     margin-top: 0;
     width: 50%;
-  }
-  img {
-    width: 100%;
   }
 }
 </style>

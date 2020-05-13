@@ -1,24 +1,15 @@
 <template>
   <div class="yalo animate">
     <div class="jf-container jf-container--flex">
-      <div class="title">
-        <h2 class="jf-h1">Yalo Chat</h2>
-        <span class="jf-label">Chatbot Startup</span>
-      </div>
-      <div class="project-images animate basic-animation">
-        <div v-swiper:mySwiper="options">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://via.placeholder.com/1200x1200">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://via.placeholder.com/1600x1600">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://via.placeholder.com/1400x1400">
-            </div>
-          </div>
+      <div class="title-container">
+        <div class="title">
+          <h3 class="jf-h1">Yalo Chat</h3>
+          <span class="jf-label">Chatbot Startup</span>
         </div>
+      </div>
+
+      <div class="project-images animate basic-animation">
+        <Slider v-bind="gallery"/>
       </div>
 
       <div class="content">
@@ -32,27 +23,33 @@
         </div>
         <div class="jf-spacer"></div>
         <h4 class="jf-lead">Yalo powers messaging for some of world's largest companies.</h4>
-        <p>I've .</p>
+        <p>I support Yalo's design and marketing team with the development of their public website. The site is made in Webflow.</p>
+        <span class="jf-label">Visit</span>
         <p>
-          <a href="#">View more</a>
+          <a href="https://yalochat.com/">yalochat.com</a>
         </p>
       </div>
     </div>
   </div>
 </template>
 <script>
-import { directive } from "vue-awesome-swiper";
-import "swiper/css/swiper.css";
+import Slider from "~/components/Slider.vue";
 
 export default {
-  directives: {
-    swiper: directive
+  components: {
+    Slider
   },
   data() {
     return {
-      options: {
-        slidesPerView: 1,
-        loop: true
+      gallery: {
+        background: "light",
+        imgs: [
+          "/projects/yalo/yalo_06.jpg",
+          "/projects/yalo/yalo_01.jpg",
+          "/projects/yalo/yalo_04.jpg",
+          "/projects/yalo/yalo_texture.jpg",
+          "/projects/yalo/yalo_blog.jpg"
+        ]
       }
     };
   }
@@ -79,7 +76,39 @@ export default {
     }
   }
 }
-.title {
-  background: red;
+.title-container {
+  position: relative;
+  width: 10%;
+  .title {
+    position: absolute;
+    top: 156px;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    text-align: right;
+    .jf-h1 {
+      white-space: nowrap;
+    }
+    @include bp(s720) {
+      top: 211px;
+    }
+  }
+}
+.project-images {
+  margin-left: 10%;
+  width: 80%;
+  @include bp(s1280) {
+    margin-left: 5%;
+    width: 50%;
+  }
+}
+.content {
+  @include padding-top;
+  margin-left: 20%;
+  width: 80%;
+  @include bp(s1280) {
+    margin-left: 5%;
+    width: 30%;
+  }
 }
 </style>

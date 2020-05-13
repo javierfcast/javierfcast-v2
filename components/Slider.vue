@@ -46,10 +46,15 @@ export default {
 @import "./assets/_mixins.scss";
 .swiper {
   position: relative;
+  width: 100%;
+  .swiper-image {
+    width: 100%;
+  }
   .swiper-pagination {
     bottom: -18px;
     left: 0;
   }
+
   .swiper-button-prev,
   .swiper-button-next {
     top: auto;
@@ -67,9 +72,6 @@ export default {
   }
   .swiper-button-next {
     right: -10px;
-  }
-  .swiper-image {
-    width: 100%;
   }
   &.dark {
     .swiper-button-prev,
