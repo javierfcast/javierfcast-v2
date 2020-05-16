@@ -92,6 +92,9 @@ export default {
     @include bp(s720) {
       top: 211px;
     }
+    @include bp(s1600) {
+      top: 540px;
+    }
   }
 }
 .project-images {

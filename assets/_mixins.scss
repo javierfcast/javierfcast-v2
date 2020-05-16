@@ -20,6 +20,9 @@ $breakpoints: (
   "s1440": (
     min-width: 1440px
   ),
+  "s1600": (
+    min-width: 1600px
+  ),
   "s1920": (
     min-width: 1920px
   )
@@ -56,6 +59,9 @@ $black: #444444;
   }
   @include bp(s1280) {
     font-size: 90px;
+  }
+  @include bp(s1600){
+    font-size: 120px;
   }
 }
 @mixin h2() {
