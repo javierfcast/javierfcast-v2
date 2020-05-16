@@ -83,12 +83,12 @@ h6,
 a {
   text-decoration: none;
   color: $black;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid $black;
   transition: all 0.3s;
   font-weight: bold;
-  &:hover {
+  /* &:hover {
     border-bottom: 2px solid $black;
-  }
+  } */
 }
 p {
   line-height: 1.5;

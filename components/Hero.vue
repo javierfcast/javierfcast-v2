@@ -101,6 +101,7 @@ export default {
 
 a {
   @include h5;
+  border: none;
 }
 
 .hero {

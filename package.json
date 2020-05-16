@@ -1,7 +1,7 @@
 {
   "name": "javierfcast-v2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal Website of Javier Castillo",
   "author": "Nuxt.js Team",
   "private": true,
   "scripts": {
@@ -12,9 +12,9 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "@nuxt/http": "^0.4.0",
+    "@nuxt/http": "0.5.1",
     "node-sass": "4.14.0",
-    "nuxt": "^2.12.2",
+    "nuxt": "2.12.2",
     "reqlim": "^0.0.0",
     "sass-loader": "8.0.2",
     "swiper": "5.3.8",
