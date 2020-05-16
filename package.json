@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@nuxt/http": "0.5.1",
-    "node-sass": "4.14.0",
+    "node-sass": "4.14.1",
     "nuxt": "2.12.2",
-    "reqlim": "^0.0.0",
+    "reqlim": "0.0.0",
     "sass-loader": "8.0.2",
-    "swiper": "5.3.8",
+    "swiper": "5.4.0",
     "vue-awesome-swiper": "4.1.1"
   },
   "keywords": []
