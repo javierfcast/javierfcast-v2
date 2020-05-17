@@ -18,7 +18,8 @@
     "reqlim": "0.0.0",
     "sass-loader": "8.0.2",
     "swiper": "5.4.0",
-    "vue-awesome-swiper": "4.1.1"
+    "vue-awesome-swiper": "4.1.1",
+    "web-streams-polyfill": "2.1.1"
   },
   "keywords": []
 }
