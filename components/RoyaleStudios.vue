@@ -19,8 +19,9 @@
             class="jf-lead"
           >Back in 2009, I co-founded Royale Studios, a digital agency that specialices in the design and development of brands, websites and online stores.</h4>
           <p>We've had the privilege of building Guatemala's web, partnering with big companies international companies like Tacobell, Visa and Pepsi. Big national companies like Cementos Progreso, Banco Industrial, BAM, Emisoras Unidas but also with small companies and startups.</p>
+          <span class="jf-label">Visit</span>
           <p>
-            <a href="#">View more</a>
+            <a href="https://royalestudios.com/">royalestudios.com</a>
           </p>
         </div>
       </div>
@@ -107,7 +108,7 @@ export default {
 .project-images {
   width: 100%;
   margin-top: 40px;
-  transition-delay: 2s;
+  transition-delay: 1s;
   @include bp(s720) {
     margin-top: 0;
     margin-left: 10%;

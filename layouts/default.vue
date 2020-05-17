@@ -12,9 +12,10 @@ export default {
         if (entry.intersectionRatio > 0) {
           console.log(entry.target + "in view");
           entry.target.classList.add("animated");
-          observer.unobserve(entry.target);
+          //observer.unobserve(entry.target);
         } else {
           console.log("out of view");
+          entry.target.classList.remove("animated");
         }
       });
     });

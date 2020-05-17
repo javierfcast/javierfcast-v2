@@ -72,7 +72,7 @@ export default {
   }
   &.animated {
     &:before {
-      width: 70%;
+      width: 80%;
     }
   }
 }
