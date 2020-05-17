@@ -30,7 +30,7 @@
         <p>I have been helping them for the last two years with the development of spacial interactive coverages and technical support.</p>
         <span class="jf-label">Visit</span>
         <p>
-          <a href="https://yalochat.com/">nomada.gt</a>
+          <a href="https://nomada.gt/">nomada.gt</a>
         </p>
       </div>
       <div class="project-images animate basic-animation">
