@@ -42,15 +42,19 @@
     background: #f2f2f2;
     position: absolute;
     width: 0%;
-    height: 100%;
-    top: 0;
+    height: 50%;
+    top: 200px;
     left: 0;
     @include transition(all, 2s);
     transition-delay: 0.5s;
   }
   &.animated {
     &:before {
-      width: 80%;
+      left: 10%;
+      width: 50%;
+      @include bp(s1280) {
+        left: 25%;
+      }
     }
   }
 }
@@ -64,23 +68,28 @@
 
 .content {
   @include padding-top;
+  @include padding-bottom;
   width: 100%;
-  @include bp(s720) {
-    margin-left: 40%;
-    width: 60%;
+  @include bp(s360) {
+    margin-left: 20%;
+    width: 80%;
   }
   @include bp(s1280) {
-    padding-top: 0;
+    padding-bottom: 0;
     margin-left: 20%;
     width: 30%;
   }
 }
 
 .project-images {
-  margin-left: 10%;
-  width: 10%;
+  width: 100%;
+  @include bp(s360) {
+    margin-left: 20%;
+    width: 80%;
+  }
   @include bp(s1280) {
-    margin-left: 5%;
+    margin-left: 0;
+    margin-top: -100px;
     width: 50%;
   }
 }
