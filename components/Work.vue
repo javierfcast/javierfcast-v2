@@ -4,6 +4,7 @@
     <Nomada/>
     <Yalo/>
     <Adherente/>
+    <Posfly/>
   </section>
 </template>
 <script>
