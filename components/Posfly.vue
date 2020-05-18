@@ -17,6 +17,7 @@
           <div class="jf-spacer"></div>
           <h4
             class="jf-lead"
+
           >Posfly is a point of sale (POS) solution to take orders and keep track of sales, kitchen, staff and much more.</h4>
           <p>I've been developing Posfly as a side project. I made the branding with the help of Axel Flores, the UI/UX and with Kevin we developed a working prototype in React and Firebase.</p>
           <span class="jf-label">Visit</span>
