@@ -7,18 +7,28 @@ export default {
     //Animate all elements with class animate-me
     const animateMe = document.querySelectorAll(".animate");
 
-    let observer = new IntersectionObserver(entries => {
+    let observerOptions = {
+      root: null,
+      rootMargin: "500px",
+      threshold: 0
+    };
+
+    let observerCallback = (entries, observer) => {
       entries.forEach(entry => {
         if (entry.intersectionRatio > 0) {
-          console.log(entry.target + "in view");
+          console.log(
+            entry.target.className + " in view and trying version 0.3"
+          );
           entry.target.classList.add("animated");
-          //observer.unobserve(entry.target);
+          observer.unobserve(entry.target);
         } else {
-          console.log("out of view");
+          console.log(entry.target.className + " out of view");
           entry.target.classList.remove("animated");
         }
       });
-    });
+    };
+
+    let observer = new IntersectionObserver(observerCallback, observerOptions);
 
     animateMe.forEach(el => {
       observer.observe(el);
