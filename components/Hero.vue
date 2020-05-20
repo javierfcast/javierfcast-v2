@@ -113,6 +113,11 @@ a {
   @include bp(s720) {
     padding-top: 40px;
   }
+  @include bp(s1280) {
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .container {
   @include bp(s1280) {

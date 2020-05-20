@@ -1,5 +1,6 @@
 <template>
   <div class="archive">
+    <img class="project-image" src="https://via.placeholder.com/1080x1080">
     <h2 class="jf-h1">Archive</h2>
     <div class="project-heading">
       <span class="jf-label">Project</span>
@@ -66,7 +67,38 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  mounted: function() {
+    var image = document.querySelector(".project-image");
+    document.addEventListener("mousemove", getMouse);
 
+    var imagepos = { x: 0, y: 0 };
+
+    setInterval(followMouse, 50);
+
+    var mouse = { x: 0, y: 0 }; //mouse.x, mouse.y
+
+    function getMouse(e) {
+      mouse.x = e.pageX;
+      mouse.y = e.pageY;
+    }
+
+    function followMouse() {
+      //1. find distance X , distance Y
+      var distX = mouse.x - imagepos.x;
+      var distY = mouse.y - imagepos.y;
+      //Easing motion
+      //Progressive reduction of distance
+      imagepos.x += distX / 5;
+      imagepos.y += distY / 2;
+
+      image.style.left = imagepos.x + "px";
+      image.style.top = imagepos.y + "px";
+    }
+  }
+};
+</script>
 <style lang="scss" scoped>
 @import "./assets/_mixins.scss";
 
@@ -129,6 +161,17 @@
     @include h2;
   }
 }
+.project-image {
+  position: absolute;
+  display: block;
+  width: 25%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  img {
+    width: 100%;
+  }
+}
 .project-list {
   &.animated {
     .project-item {
@@ -136,6 +179,7 @@
     }
   }
 }
+
 .year {
   width: 80px;
   text-align: right;
