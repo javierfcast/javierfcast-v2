@@ -11,16 +11,7 @@
     </div>
     <div class="project-list animate">
       <div class="project-item">
-        <a class="project-link" href="#" data-image="/projects/royalestudios/royale_texture.jpg">
-          <h4>Alessa.jewelry</h4>
-          <div class="project-meta">
-            <span class="project-type">E-Commerce</span>
-            <span class="year">2020</span>
-          </div>
-        </a>
-      </div>
-      <div class="project-item">
-        <a class="project-link" href="#" data-image="/projects/royalestudios/royale_posts.jpg">
+        <a class="project-link" href="#" data-image="/projects/royalestudios/url_websites.jpg">
           <h4>Universidad Rafael Landívar</h4>
           <div class="project-meta">
             <span class="project-type">Website</span>
@@ -29,8 +20,8 @@
         </a>
       </div>
       <div class="project-item">
-        <a class="project-link" href="#">
-          <h4>Dev URL</h4>
+        <a class="project-link" href="#" data-image="/projects/archive/url_dev.jpg">
+          <h4>URL DEV</h4>
           <div class="project-meta">
             <span class="project-type">Website</span>
             <span class="year">2020</span>
@@ -38,16 +29,16 @@
         </a>
       </div>
       <div class="project-item">
-        <a class="project-link" href="#">
-          <h4>Yalo Chat.com</h4>
+        <a class="project-link" href="#" data-image="/projects/archive/alessa.jpg">
+          <h4>Alessa.jewelry</h4>
           <div class="project-meta">
-            <span class="project-type">Website</span>
+            <span class="project-type">E-Commerce</span>
             <span class="year">2020</span>
           </div>
         </a>
       </div>
       <div class="project-item">
-        <a class="project-link" href="#">
+        <a class="project-link" href="#" data-image="/projects/archive/saul_02.jpg">
           <h4>Saul E. Mendez.com</h4>
           <div class="project-meta">
             <span class="project-type">Website</span>
@@ -56,7 +47,16 @@
         </a>
       </div>
       <div class="project-item">
-        <a class="project-link" href="#">
+        <a class="project-link" href="#" data-image="/projects/archive/emporium_05.jpg">
+          <h4>Emporium.com.gt</h4>
+          <div class="project-meta">
+            <span class="project-type">E-Commerce</span>
+            <span class="year">2019</span>
+          </div>
+        </a>
+      </div>
+      <div class="project-item">
+        <a class="project-link" href="#" data-image="/projects/archive/datamecanic.jpg">
           <h4>Datamecanic</h4>
           <div class="project-meta">
             <span class="project-type">Webapp</span>
