@@ -32,7 +32,9 @@
           <div class="separator" v-bind:class="{ active: isActive }"></div>
           <div class="content-three">
             <div class="bio anibasic" v-bind:class="{ active: isActive }">
-              <p>I am a UI/UX designer and web developer from Guatemala. I love creating beautiful, interactive and performant websites.</p>
+
+              <p>I am a UI/UX designer and web developer from Guatemala. I love creating beautiful, fast, interactive websites.</p>
+
               <p>Currently stuck in Barcelona.</p>
             </div>
             <div class="separator" v-bind:class="{ active: isActive }"></div>

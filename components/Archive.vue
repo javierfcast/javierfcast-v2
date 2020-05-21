@@ -70,6 +70,7 @@
 <script>
 export default {
   mounted: function() {
+
     let links = document.querySelectorAll(".project-link");
     let image = document.querySelector(".project-image");
 
@@ -181,6 +182,17 @@ export default {
     @include h2;
   }
 }
+.project-image {
+  position: absolute;
+  display: block;
+  width: 25%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  img {
+    width: 100%;
+  }
+}
 .project-list {
   &.animated {
     .project-item {
@@ -188,6 +200,7 @@ export default {
     }
   }
 }
+
 .year {
   margin-left: 10px;
   @include bp(s720) {
