@@ -11,7 +11,7 @@
     </div>
     <div class="project-list animate">
       <div class="project-item">
-        <a class="project-link" href="#">
+        <a class="project-link" href="#" data-image="/projects/royalestudios/royale_texture.jpg">
           <h4>Alessa.jewelry</h4>
           <div class="project-meta">
             <span class="project-type">E-Commerce</span>
@@ -20,7 +20,7 @@
         </a>
       </div>
       <div class="project-item">
-        <a class="project-link" href="#">
+        <a class="project-link" href="#" data-image="/projects/royalestudios/royale_posts.jpg">
           <h4>Universidad Rafael Landívar</h4>
           <div class="project-meta">
             <span class="project-type">Website</span>
@@ -70,7 +70,22 @@
 <script>
 export default {
   mounted: function() {
-    var image = document.querySelector(".project-image");
+
+    let links = document.querySelectorAll(".project-link");
+    let image = document.querySelector(".project-image");
+
+    links.forEach(function(link) {
+      link.addEventListener("mouseover", function() {
+        let linkImage = link.dataset.image;
+        image.classList.add("show");
+        image.setAttribute("src", linkImage);
+      });
+      link.addEventListener("mouseout", function() {
+        image.classList.remove("show");
+      });
+    });
+
+    //Make image follow mouse
     document.addEventListener("mousemove", getMouse);
 
     var imagepos = { x: 0, y: 0 };
@@ -90,11 +105,11 @@ export default {
       var distY = mouse.y - imagepos.y;
       //Easing motion
       //Progressive reduction of distance
-      imagepos.x += distX / 5;
+      imagepos.x += distX;
       imagepos.y += distY / 2;
 
-      image.style.left = imagepos.x + "px";
-      image.style.top = imagepos.y + "px";
+      image.style.left = imagepos.x + 40 + "px";
+      image.style.top = imagepos.y - 60 + "px";
     }
   }
 };
@@ -109,12 +124,18 @@ export default {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid $black;
+  .project-meta {
+    display: none;
+  }
   @include bp(s720) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    .project-meta {
+      display: block;
+    }
   }
 }
 .project-item {
@@ -181,8 +202,31 @@ export default {
 }
 
 .year {
-  width: 80px;
-  text-align: right;
-  display: inline-block;
+  margin-left: 10px;
+  @include bp(s720) {
+    margin-left: 0;
+    width: 80px;
+    text-align: right;
+    display: inline-block;
+  }
+}
+.project-image {
+  position: absolute;
+  display: none;
+  width: 40%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  @include transition(all, 1s);
+  @media (hover: hover) and (pointer: fine) {
+    display: block;
+  }
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 </style>
