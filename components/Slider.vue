@@ -30,6 +30,10 @@ export default {
       options: {
         slidesPerView: 1,
         loop: true,
+        speed: 800,
+        autoplay: {
+          delay: 5000,
+        },
         pagination: {
           el: ".swiper-pagination"
         },
