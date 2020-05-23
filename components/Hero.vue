@@ -46,7 +46,7 @@
               </div>
               <div class="feat-2 anibasic" v-bind:class="{ active: isActive }">
                 <span>Featured project:</span>
-                <a href="#">Royale Studios Branding</a>
+                <a href="#">Royale Studios</a>
               </div>
               <div class="separator" v-bind:class="{ active: isActive }"></div>
               <div class="follow anibasic" v-bind:class="{ active: isActive }">
@@ -55,6 +55,7 @@
                   <a class="social-link" href="#">Instagram</a>
                   <a class="social-link" href="#">Twitter</a>
                   <a class="social-link" href="#">Behance</a>
+                  <a class="social-link" href="#">Github</a>
                   <a class="social-link" href="#">Dribbble</a>
                   <a class="social-link" href="#">Linkedin</a>
                   <span class="social-handle">@javierfcast</span>
@@ -114,7 +115,7 @@ a {
     padding-top: 40px;
   }
   @include bp(s1280) {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
     display: flex;
     align-items: flex-end;
   }

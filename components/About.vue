@@ -3,23 +3,56 @@
     <div class="jf-container">
       <div class="content">
         <h2 class="jf-h1">About me</h2>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>I studied graphic design and since I was 18, I've have been working in all kinds of digital projects, from websites and e-commerce sites to apps and webapps.</p>
-      </div>
-      <div class="image-container animate basic-animation">
-        <img class="image" src="~/static/me_working_hard.jpg" alt="Javier Castillo working hard">
-      </div>
-    </div>
-    <div class="jf-container">
-      <div class="columns">
-        <p>I have experience in UI, UX, interaction, animation, HTML, CSS, PHP, Wordpress, presentational Js, jQuery, and lately a little bit of React and Vue.js (this static website is actually built using vue.js, nuxt and is beign hosted on Netlify).</p>
+        <h3>I am the co-founder and creative director of Royale Studios.</h3>
+        <p>I have 10+ years of experience working in all kinds of digital projects, from websites and e-commerce sites to apps and webapps.</p>
+        <p>I have experience in:</p>
+         <p class="talents">
+          <span>Art Direction</span>
+          <span>Branding</span>
+          <span>Interaction</span>
+          <span>UI/UX</span>
+          <span>Project Management</span>
+          <span>Creative Development</span>
+          <span>HTML, CSS, Js</span>
+          <span>Wordpress</span>
+          <span>Woocommerce</span>
+          <span>React</span>
+          <span>Vue</span>
+        </p>
         <p>Building Royale Studios, I've also had to lead teams, do project management and even get into human resources and accounting.</p>
         <p>I like coffee, traveling, painting and playing the piano.</p>
-        <p>I love creating playlists and creating covers for them.</p>
+        <p>I love creating playlists and creating covers for them.</p> 
+      </div>
+      <div class="image-container animate basic-animation">
+        <Slider v-bind="gallery" />
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import Slider from "~/components/Slider.vue";
+
+export default {
+  components: {
+    Slider
+  },
+  data() {
+    return {
+      gallery: {
+        background: "light",
+        imgs: [
+          "/about/me_working_hard.jpg",
+          "/projects/royalestudios/royale_posts.jpg",
+          "/projects/royalestudios/royale_business_cards.jpg",
+          "/projects/royalestudios/royale_website.jpg",
+          "/projects/royalestudios/royale_ad.jpg"
+        ]
+      }
+    };
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 @import "./assets/_mixins.scss";
@@ -32,6 +65,7 @@
 .content {
   position: relative;
   padding-bottom: 40px;
+  z-index: 2;
   @include padding-right;
   @include bp(s360) {
     badding-bottom: 0;
@@ -74,27 +108,23 @@
 }
 .image-container {
   width: 100%;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: all 0.3s;
+  &:hover {
+    filter: grayscale(0);
+    opacity: 1;
+  }
   @include bp(s360) {
     position: absolute;
     right: 20px;
     width: 50%;
-    z-index: -1;
   }
   @include bp(s720) {
     right: 40px;
   }
   @include bp(s1280) {
     right: 80px;
-  }
-  .image {
-    width: 100%;
-    filter: grayscale(1);
-    opacity: 0.6;
-    transition: all 0.3s;
-    &:hover {
-      filter: grayscale(0);
-      opacity: 1;
-    }
   }
 }
 </style>

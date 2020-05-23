@@ -11,7 +11,7 @@
     </div>
     <div class="project-list animate">
       <div class="project-item">
-        <a class="project-link" href="#" data-image="/projects/royalestudios/url_websites.jpg">
+        <a class="project-link" href="#" data-image="/projects/archive/url_websites.jpg">
           <h4>Universidad Rafael Landívar</h4>
           <div class="project-meta">
             <span class="project-type">Website</span>
@@ -213,7 +213,7 @@ export default {
 .project-image {
   position: absolute;
   display: none;
-  width: 40%;
+  width: 30%;
   top: 0;
   left: 0;
   z-index: 200;
