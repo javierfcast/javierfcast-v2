@@ -47,6 +47,12 @@ export default {
 .swiper {
   position: relative;
   width: 100%;
+  &:hover{
+    cursor: grab;
+  }
+  &:active{
+    cursor: grabbing;
+  }
   .swiper-image {
     width: 100%;
   }
@@ -54,7 +60,6 @@ export default {
     bottom: -18px;
     left: 0;
   }
-
   .swiper-button-prev,
   .swiper-button-next {
     top: auto;
