@@ -51,7 +51,6 @@ html {
   box-sizing: border-box;
   color: $black;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   @include bp(s720) {
     font-size: 14px;
   }
@@ -64,9 +63,6 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
-}
-body{
-  overflow-x: hidden;
 }
 h1,
 .jf-h1 {

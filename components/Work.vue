@@ -5,6 +5,7 @@
     <Yalo/>
     <Adherente/>
     <Posfly/>
+    <Traveling/>
     <Archive/>
   </section>
 </template>
@@ -14,6 +15,7 @@ import Nomada from "~/components/projects/Nomada.vue";
 import Yalo from "~/components/projects/Yalo.vue";
 import Adherente from "~/components/projects/Adherente.vue";
 import Posfly from "~/components/projects/Posfly.vue";
+import Traveling from "~/components/projects/Traveling.vue";
 import Archive from "~/components/projects/Archive.vue";
 
 export default {
@@ -23,6 +25,7 @@ export default {
     Yalo,
     Adherente,
     Posfly,
+    Traveling,
     Archive
   }
 };
