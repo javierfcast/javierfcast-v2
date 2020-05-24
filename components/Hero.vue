@@ -52,12 +52,12 @@
               <div class="follow anibasic" v-bind:class="{ active: isActive }">
                 <span class="jf-label">Follow me</span>
                 <div class="social">
-                  <a class="social-link" href="#">Instagram</a>
-                  <a class="social-link" href="#">Twitter</a>
-                  <a class="social-link" href="#">Behance</a>
-                  <a class="social-link" href="#">Github</a>
-                  <a class="social-link" href="#">Dribbble</a>
-                  <a class="social-link" href="#">Linkedin</a>
+                  <a class="social-link" target="_blank" href="https://instagram.com/javierfcast/">Instagram</a>
+                  <a class="social-link" target="_blank" href="https://twitter.com/javierfcast/">Twitter</a>
+                  <a class="social-link" target="_blank" href="https://behance.net/javierfcast/">Behance</a>
+                  <a class="social-link" target="_blank" href="https://dribbble.com/javierfcast">Dribbble</a>
+                  <a class="social-link" target="_blank" href="https://github.com/javierfcast/">Github</a>
+                  <a class="social-link" target="_blank" href="https://www.linkedin.com/in/javierfcast/">LinkedIn</a>
                   <span class="social-handle">@javierfcast</span>
                 </div>
               </div>
