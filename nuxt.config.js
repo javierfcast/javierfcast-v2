@@ -52,6 +52,12 @@ export default {
     "./codesandbox"
   ],
 
+  buildModules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-111931182-1'
+    }]
+  ],
+
   /*
    ** HTTP module configuration
    */
