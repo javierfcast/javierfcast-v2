@@ -20,6 +20,18 @@ export default {
         content: "Official Nuxt.js starter for CodeSandBox"
       }
     ],
+    script: [
+      { 
+        src: 'https://config.metomic.io/config.js?id=prj:cb8faf74-4ef3-4a79-a566-6f6b4bb2a131',
+        crossorigin: "true", 
+        charset: "utf-8"
+      },
+      { 
+        src: 'https://consent-manager.metomic.io/embed.js',
+        crossorigin: "true", 
+        charset: "utf-8"
+      }
+    ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
