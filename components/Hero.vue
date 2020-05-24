@@ -46,7 +46,7 @@
               </div>
               <div class="feat-2 anibasic" v-bind:class="{ active: isActive }">
                 <span>Featured project:</span>
-                <a href="#">Royale Studios</a>
+                <a href="#royalestudios">Royale Studios</a>
               </div>
               <div class="separator" v-bind:class="{ active: isActive }"></div>
               <div class="follow anibasic" v-bind:class="{ active: isActive }">
@@ -58,7 +58,7 @@
                   <a class="social-link" target="_blank" href="https://dribbble.com/javierfcast">Dribbble</a>
                   <a class="social-link" target="_blank" href="https://github.com/javierfcast/">Github</a>
                   <a class="social-link" target="_blank" href="https://www.linkedin.com/in/javierfcast/">LinkedIn</a>
-                  <span class="social-handle">@javierfcast</span>
+                  <span class="social-handle">/ @javierfcast</span>
                 </div>
               </div>
             </div>
@@ -69,9 +69,9 @@
               <h5>Welcome</h5>
             </div>
             <div class="links">
-              <a class="link anibasic" v-bind:class="{ active: isActive }" href="#">About</a>
-              <a class="link anibasic" v-bind:class="{ active: isActive }" href="#">Work</a>
-              <a class="link anibasic" v-bind:class="{ active: isActive }" href="#">Contact</a>
+              <a class="link anibasic" v-bind:class="{ active: isActive }" href="#about">About</a>
+              <a class="link anibasic" v-bind:class="{ active: isActive }" href="#work">Work</a>
+              <a class="link anibasic" v-bind:class="{ active: isActive }" href="#contact">Contact</a>
             </div>
           </div>
         </div>

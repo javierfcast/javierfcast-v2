@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section class="about" id="about">
     <div class="jf-container">
       <div class="content">
         <h2 class="jf-h1">About me</h2>

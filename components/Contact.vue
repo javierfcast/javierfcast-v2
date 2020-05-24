@@ -1,5 +1,5 @@
 <template>
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2 class="jf-h1">Get in touch</h2>
     <a href="mailto:javierfcast@gmail.com"><h3>javierfcast@gmail.com</h3></a>
     <div class="jf-spacer"></div>

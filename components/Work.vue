@@ -1,5 +1,5 @@
 <template>
-  <section class="work">
+  <section class="work" id="work">
     <RoyaleStudios/>
     <Nomada/>
     <Yalo/>

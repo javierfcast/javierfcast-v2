@@ -1,5 +1,5 @@
 <template>
-  <div class="royale-studios animate">
+  <div class="royale-studios animate" id="royalestudios">
     <div class="jf-container jf-container--flex">
       <div class="content animate">
         <h2 class="jf-h1">Royale Studios</h2>
