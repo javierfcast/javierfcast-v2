@@ -6,17 +6,17 @@
         <h3>I am the co-founder and creative director of Royale Studios. I have 10+ years of experience building all kinds of digital projects, from websites and e-commerce sites to apps and web apps.</h3>
         <p>I have experience in:</p>
          <p class="talents">
-          <span>Art Direction</span>
-          <span>Branding</span>
-          <span>Interaction</span>
-          <span>UI/UX</span>
-          <span>Project Management</span>
-          <span>Creative Development</span>
-          <span>HTML, CSS, Js</span>
-          <span>Wordpress</span>
-          <span>Woocommerce</span>
-          <span>React</span>
-          <span>Vue</span>
+          <span>Art Direction, </span>
+          <span>branding, </span>
+          <span>interaction, </span>
+          <span>UI/UX, </span>
+          <span>project management, </span>
+          <span>creative development, </span>
+          <span>HTML, CSS, Js, </span>
+          <span>Wordpress, </span>
+          <span>Woocommerce, </span>
+          <span>React, </span>
+          <span>and Vue.</span>
         </p>
         <p>Building Royale Studios, I've also had to lead teams, do project management and even get into human resources and accounting.</p>
         <p>I love coffee, traveling, painting, playing the piano and curating playlists on spotify to create covers for them.</p> 
