@@ -3,8 +3,7 @@
     <div class="jf-container">
       <div class="content">
         <h2 class="jf-h1">About me</h2>
-        <h3>I am the co-founder and creative director of Royale Studios.</h3>
-        <p>I have 10+ years of experience working in all kinds of digital projects, from websites and e-commerce sites to apps and webapps.</p>
+        <h3>I am the co-founder and creative director of Royale Studios. I have 10+ years of experience building all kinds of digital projects, from websites and e-commerce sites to apps and web apps.</h3>
         <p>I have experience in:</p>
          <p class="talents">
           <span>Art Direction</span>
@@ -75,9 +74,6 @@ export default {
     padding-top: 160px;
     width: 70%;
   }
-  @include bp(s960) {
-    width: 60%;
-  }
   @include bp(s1280) {
     padding-top: 220px;
   }
@@ -98,11 +94,6 @@ export default {
     @include bp(s720) {
       width: 60%;
     }
-  }
-}
-.columns {
-  @include bp(s480) {
-    column-count: 2;
   }
 }
 .image-container {
