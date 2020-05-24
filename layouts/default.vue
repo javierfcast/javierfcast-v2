@@ -7,11 +7,11 @@ export default {
     //Animate all elements with class animate-me
     const animateMe = document.querySelectorAll(".animate");
 
-    let observerOptions = {
-      root: null,
-      rootMargin: "500px",
-      threshold: 0
-    };
+    // let observerOptions = {
+    //   root: null,
+    //   rootMargin: "500px",
+    //   threshold: 0
+    // };
 
     let observerCallback = (entries, observer) => {
       entries.forEach(entry => {
@@ -28,7 +28,7 @@ export default {
       });
     };
 
-    let observer = new IntersectionObserver(observerCallback, observerOptions);
+    let observer = new IntersectionObserver(observerCallback);
 
     animateMe.forEach(el => {
       observer.observe(el);
@@ -50,6 +50,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   color: $black;
+  scroll-behavior: smooth;
   @include bp(s720) {
     font-size: 14px;
   }
