@@ -1,6 +1,6 @@
 <template>
   <div class="archive">
-    <img class="project-image" src="https://via.placeholder.com/1080x1080">
+    <img class="project-image" src="">
     <h2 class="jf-h1">Archive</h2>
     <div class="project-heading">
       <span class="jf-label">Project</span>

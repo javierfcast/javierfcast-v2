@@ -28,6 +28,10 @@
 
 .contact{
   @include container;
+  .jf-label{
+    margin-bottom: 10px;
+    display: block;
+  }
 }
 
 </style>

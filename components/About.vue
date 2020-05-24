@@ -117,7 +117,7 @@ export default {
   @include bp(s360) {
     position: absolute;
     right: 20px;
-    width: 50%;
+    width: 45%;
   }
   @include bp(s720) {
     right: 40px;
