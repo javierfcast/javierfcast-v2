@@ -11,7 +11,7 @@
     </div>
     <div class="project-list animate">
       <div class="project-item">
-        <a class="project-link" href="#" data-image="/projects/archive/url_websites.jpg">
+        <a class="project-link" href="#" data-image="/projects/archive/url_website.jpg">
           <h4>Universidad Rafael Landívar</h4>
           <div class="project-meta">
             <span class="project-type">Website</span>

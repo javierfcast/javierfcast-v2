@@ -20,8 +20,7 @@
           <span>Vue</span>
         </p>
         <p>Building Royale Studios, I've also had to lead teams, do project management and even get into human resources and accounting.</p>
-        <p>I like coffee, traveling, painting and playing the piano.</p>
-        <p>I love creating playlists and creating covers for them.</p> 
+        <p>I love coffee, traveling, painting, playing the piano and curating playlists on spotify to create covers for them.</p> 
       </div>
       <div class="image-container animate basic-animation">
         <Slider v-bind="gallery" />
@@ -43,10 +42,10 @@ export default {
         background: "light",
         imgs: [
           "/about/me_working_hard.jpg",
-          "/projects/royalestudios/royale_posts.jpg",
-          "/projects/royalestudios/royale_business_cards.jpg",
-          "/projects/royalestudios/royale_website.jpg",
-          "/projects/royalestudios/royale_ad.jpg"
+          "/about/javier_castillo_working_in_tanger.jpg",
+          "/about/javier_castillo_drinking_coffee.jpg",
+          "/about/javier_castillo_walking_through_sevilla.jpg",
+          "/about/javier_castillo_drinking_beer.jpg"
         ]
       }
     };
@@ -97,7 +96,7 @@ export default {
   }
   p {
     @include bp(s720) {
-      width: 50%;
+      width: 60%;
     }
   }
 }
