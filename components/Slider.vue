@@ -30,7 +30,7 @@ export default {
       options: {
         slidesPerView: 1,
         loop: true,
-        speed: 800,
+        speed: 500,
         autoplay: {
           delay: 5000,
         },
