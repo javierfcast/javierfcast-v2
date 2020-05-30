@@ -43,10 +43,13 @@
     position: absolute;
     width: 0%;
     height: 50%;
-    top: 200px;
+    top: 170px;
     left: 0;
     @include transition(all, 2s);
     transition-delay: 0.5s;
+    @include bp(s1600){
+      top: 200px;
+    }
   }
   &.animated {
     &:before {

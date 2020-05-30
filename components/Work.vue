@@ -5,8 +5,8 @@
     <Yalo/>
     <Adherente/>
     <Posfly/>
-    <Traveling/>
     <Archive/>
+    <!-- <Traveling/> -->
   </section>
 </template>
 <script>
@@ -15,8 +15,8 @@ import Nomada from "~/components/projects/Nomada.vue";
 import Yalo from "~/components/projects/Yalo.vue";
 import Adherente from "~/components/projects/Adherente.vue";
 import Posfly from "~/components/projects/Posfly.vue";
-import Traveling from "~/components/projects/Traveling.vue";
 import Archive from "~/components/projects/Archive.vue";
+import Traveling from "~/components/projects/Traveling.vue";
 
 export default {
   components: {

@@ -10,6 +10,7 @@
         <li><a href="#">Hamburg</a></li>
         <li><a href="#">Berlin</a></li>
         <li><a href="#">Budapest</a></li>
+        <li><a href="#">París</a></li>
         <li><a href="#">Lisboa</a></li>
         <li><a href="#">Sevilla</a></li>
         <li><a href="#">Toledo</a></li>
@@ -18,9 +19,11 @@
         <li><a href="#">Chefchauen</a></li>
         <li><a href="#">Tanger</a></li>
 
+        <li><a href="#">Cancún</a></li>
         <li><a href="#">Playa del Carmen</a></li>
-        <li><a href="#">Isla de Flores</a></li>
+        <li><a href="#">Tulum</a></li>
         <li><a href="#">Mexico City</a></li>
+        <li><a href="#">Isla de Flores</a></li>
 
         <li><a href="#">San Francisco</a></li>
         <li><a href="#">Los Angeles</a></li>
@@ -34,6 +37,8 @@
         <li><a href="#">Venecia</a></li>
         <li><a href="#">Roma</a></li>
         <li><a href="#">Florencia</a></li>
+        <li><a href="#">Genova</a></li>
+        <li><a href="#">Nice</a></li>
 
         <li><a href="#">Santorini</a></li>
         <li><a href="#">Amsterdam</a></li>
@@ -73,7 +78,7 @@
       padding-left: 0;
       padding-right: 40px;
       a{
-        @include h3;
+        @include h2;
       }
     }
   }
