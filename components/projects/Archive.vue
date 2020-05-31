@@ -1,7 +1,7 @@
 <template>
   <div class="archive">
     <img class="project-image" src="">
-    <h2 class="jf-h1">Archive</h2>
+    <h2 class="jf-h1">More projects...</h2>
     <div class="project-heading">
       <span class="jf-label">Project</span>
       <div class="project-meta">
