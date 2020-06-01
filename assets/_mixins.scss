@@ -44,7 +44,7 @@ $breakpoints: (
 $font-archivo: 'Archivo', sans-serif;
 $font-narrow: 'Archivo Narrow', sans-serif;
 
-$black: #444444;
+$black: #262524;
 
 @mixin bold(){
   font-weight: bold;
@@ -178,7 +178,8 @@ $black: #444444;
 @mixin container{
   max-width: 1600px;
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
   @include padding-top;
   @include padding-bottom;
   @include padding-left;

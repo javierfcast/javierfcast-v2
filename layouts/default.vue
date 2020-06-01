@@ -117,7 +117,6 @@ p {
 .no-padding-top {
   padding-top: 0 !important;
 }
-
 .jf-container {
   max-width: 1600px;
   margin: 0 auto;
@@ -147,6 +146,7 @@ p {
   }
   .second-date {
     opacity: 0;
+    visibility: hidden;
     transition-delay: 5s;
     @include transition(all, 1s);
   }
@@ -156,7 +156,19 @@ p {
     }
     .second-date {
       opacity: 1;
+      visibility: visible;
     }
+  }
+}
+.jf-button{
+  display: inline-block;
+  border: 1px solid $black;
+  color: $black;
+  padding: 10px 20px;
+  @include label;
+  &.white{
+    color: white;
+    border: 1px solid white;
   }
 }
 .basic-animation {
