@@ -134,6 +134,15 @@ p {
 .jf-spacer {
   margin-bottom: 40px;
 }
+.jf-spacer--big{
+  margin-bottom: 40px;
+  @include bp(s960){
+    margin-bottom: 80px;
+  }
+  @include bp(s1280){
+    margin-bottom: 120px; 
+  }
+}
 .jf-date {
   display: flex;
   align-items: center;

@@ -2,9 +2,12 @@
   <section class="mixtapes" id="mixtapes">
     <div class="heading">
       <h2 class="jf-h1">Mixtapes</h2>
-      <div class="heading-content">
+    </div>
+    <div class="content-container">
+      <div class="content">
         <h4 class="jf-lead">Curated Spotify playlists with custom cover artworks.</h4>
         <p>An ongoing excercise mixing two of my greatest pasions, music and design.</p>
+        <div class="jf-spacer--big"></div>
         <p>Browse, listen, enjoy.</p>
       </div>
     </div>
@@ -91,22 +94,33 @@ export default {
 
 .heading{
   @include container;
-  padding-bottom: 40px;
+  padding-bottom: 0px !important;
+  position: relative;
+  z-index: 2;
   h2{
-    color: white;
-    -webkit-text-fill-color: $black;
+    color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    @include margin-bottom;
   }
-  .heading-content{
-    max-width: 320px;
+}
+
+.content-container{
+  @include container;
+}
+
+.content{
+  max-width: 320px;
+  @include bp(s1280){
+    padding-left: 20px;
   }
 }
 
 .swiper{
   @include bp(s1280){
-    margin-top: -210px;
+    margin-top: -540px;
+  }
+  .swiper-wrapper{
+    background: $black;
   }
 }
 
