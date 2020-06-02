@@ -71,6 +71,7 @@
             <div class="links">
               <a class="link anibasic" v-bind:class="{ active: isActive }" href="#about">About</a>
               <a class="link anibasic" v-bind:class="{ active: isActive }" href="#work">Work</a>
+              <a class="link anibasic" v-bind:class="{ active: isActive }" href="#mixtapes">Mixtapes</a>
               <a class="link anibasic" v-bind:class="{ active: isActive }" href="#contact">Contact</a>
             </div>
           </div>
