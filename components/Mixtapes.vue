@@ -123,6 +123,12 @@ export default {
     display: block;
     margin-bottom: 20px;
   }
+  &:hover{
+    cursor: grab;
+  }
+  &:active{
+    cursor: grabbing;
+  }
 }
 
 
