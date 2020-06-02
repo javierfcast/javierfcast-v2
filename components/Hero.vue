@@ -32,21 +32,20 @@
           <div class="separator" v-bind:class="{ active: isActive }"></div>
           <div class="content-three">
             <div class="bio anibasic" v-bind:class="{ active: isActive }">
-
-              <p>I am a UI/UX designer and web developer from Guatemala. I love creating beautiful, fast, interactive websites.</p>
-
-              <p>Currently stuck in Barcelona.</p>
+              <p>I'm a UI/UX designer and web developer from Guatemala. I love creating beautiful, fast, interactive websites.</p>
             </div>
             <div class="separator" v-bind:class="{ active: isActive }"></div>
             <div class="feats">
               <div class="feat-1 anibasic" v-bind:class="{ active: isActive }">
-                <span>Read in:</span>
+                <!-- <span>Read in:</span>
                 <a href="#">English</a> /
-                <a href="#">Español</a>
+                <a href="#">Español</a> -->
+                <span>Background from:</span>
+                <a href="#royalestudios">Royale Studios Branding</a>
               </div>
               <div class="feat-2 anibasic" v-bind:class="{ active: isActive }">
-                <span>Featured project:</span>
-                <a href="#royalestudios">Royale Studios</a>
+                <span>Currently in:</span>
+                <h5>Barcelona, Spain</h5>
               </div>
               <div class="separator" v-bind:class="{ active: isActive }"></div>
               <div class="follow anibasic" v-bind:class="{ active: isActive }">
@@ -241,7 +240,8 @@ a {
     padding: 20px 0;
     transition-delay: 2.3s;
     @include bp(s1280) {
-      padding: 20px 20px 20px 0;
+      display: flex;
+      align-items: center;
       border-right: 2px solid $black;
       width: 33.333%;
     }
@@ -304,12 +304,19 @@ a {
   flex-wrap: wrap;
   padding-top: 20px;
   .welcome {
+    display: none;
     width: 30%;
     transition-delay: 2.7s;
+    @include bp(s720){
+      display: block;
+    }
   }
   .links {
-    width: 70%;
+    width: 100%;
     text-align: right;
+    @include bp(s720){
+      width: 70%;
+    }
     .link {
       margin-left: 10px;
       &:nth-child(1) {
@@ -320,6 +327,12 @@ a {
       }
       &:nth-child(3) {
         transition-delay: 3s;
+      }
+      &:nth-child(4) {
+        transition-delay: 3.1s;
+      }
+      &:nth-child(5) {
+        transition-delay: 3.2s;
       }
     }
   }
