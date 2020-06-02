@@ -29,6 +29,20 @@
             <a class="jf-button white" href="https://open.spotify.com/playlist/1BVgPOfhJid8UKCBYWPBZp?si=a8jaar28Q-Syd6TzX85BcA" target="_blank" rel="noopener noreferrer">Listen now</a>
           </div>
           <div class="swiper-slide mixtape">
+            <img class="mixtape-artwork" src="~/static/mixtapes/perreo_intenso.jpg" alt="fresh indie">
+            <h3>Perreo Intenso</h3>
+            <span class="jf-label">Updated: 2020</span>
+            <p>Un set de 2 horas para perrear hasta el piso.</p>
+            <a class="jf-button white" href="https://open.spotify.com/playlist/0bZRY3tuFL53Vs3SEYRYx1?si=k0ddjGnZSlu6UYbbryLigg" target="_blank" rel="noopener noreferrer">Listen now</a>
+          </div>
+          <div class="swiper-slide mixtape">
+            <img class="mixtape-artwork" src="~/static/mixtapes/reggaeton_2020.jpg" alt="fresh indie">
+            <h3>Reggaeton 2020</h3>
+            <span class="jf-label">Updated: 2020</span>
+            <p>Updated constantly with lo mejor del genero released during this crazy 2020.</p>
+            <a class="jf-button white" href="https://open.spotify.com/playlist/7AfMXxhF5FOcUBWWQPsu1K?si=9IxMdATST9ucpxaqwU1U6Q" target="_blank" rel="noopener noreferrer">Listen now</a>
+          </div>
+          <div class="swiper-slide mixtape">
             <img class="mixtape-artwork" src="~/static/mixtapes/bajo_fondo.jpg" alt="Bajo Fondo Funk">
             <h3>Bajo Fondo Funk</h3>
             <span class="jf-label">Updated: 2020</span>

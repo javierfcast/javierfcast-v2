@@ -7,7 +7,6 @@
     <!-- <Traveling/> -->
     <Mixtapes/>
     <Contact/>
-    <a href="javascript:window.Metomic('ConsentManager:show')">manage cookies</a>
   </section>
 </template>
 <script>

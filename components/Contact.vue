@@ -20,6 +20,7 @@
       All the code is open source and you can check it out on Github.<br>
       Fonts used are Archivo by and Editorial New by Pangram Pangram.
     </p>
+    <a href="javascript:window.Metomic('ConsentManager:show')">Manage cookies</a>
   </section>
 </template>
 
