@@ -43,6 +43,7 @@ $breakpoints: (
 // Variables
 $font-archivo: 'Archivo', sans-serif;
 $font-narrow: 'Archivo Narrow', sans-serif;
+$font-serif: 'Playfair Display', serif;
 
 $black: #262524;
 
@@ -172,6 +173,16 @@ $black: #262524;
   }
   @include bp(s1280){
     margin-top: 120px; 
+  }
+}
+
+@mixin margin-bottom{
+  margin-bottom: 40px;
+  @include bp(s960){
+    margin-bottom: 80px;
+  }
+  @include bp(s1280){
+    margin-bottom: 120px; 
   }
 }
 

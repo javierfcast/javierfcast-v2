@@ -37,7 +37,7 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;700&display=swap"
+          "https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Archivo:wght@400;700&family=Playfair+Display:wght@900&display=swap"
       }
     ]
   },

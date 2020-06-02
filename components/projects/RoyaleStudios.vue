@@ -1,8 +1,12 @@
 <template>
   <div class="royale-studios animate" id="royalestudios">
     <div class="jf-container jf-container--flex">
+      <div class="work-heading">
+        <h2 class="work-title">Work</h2>
+        <div class="work-stamp">&amp;</div>
+      </div>
       <div class="content animate">
-        <h2 class="jf-h1">Royale Studios</h2>
+        <h3 class="jf-h1">Royale Studios</h3>
         <span class="jf-label">Digital Agency</span>
         <div class="jf-spacer"></div>
         <div class="project-content">
@@ -83,6 +87,69 @@ export default {
     }
   }
 }
+
+.work-heading{
+  position: relative;
+  width: 100%;
+  @include margin-bottom;
+  .work-title{
+    font-size: 34vw;
+    color: #4F4F4F;
+    font-family: $font-serif;
+    @include bp(s1600){
+      font-size: 550px;
+    }
+  }
+  .work-stamp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #F8374E url('/projects/experience.svg') center / cover;
+    border-radius: 50%;
+    position: absolute;
+    font-family: $font-serif;
+    animation-name: fullRotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 24px;  
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    left: 65%;
+    @include bp(s480){
+      left: 70%;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+    }
+    @include bp(s720){
+      font-size: 48px;
+      width: 80px;
+      height: 80px;
+      bottom: 40px;
+    }
+    @include bp(s1280){
+      font-size: 48px;
+      width: 80px;
+      height: 80px;
+      bottom: 40px;
+    }
+    @include bp(s1600){
+      font-size: 72px;
+      width: 144px;
+      height: 144px;
+      bottom: 72px;
+    }
+  }
+}
+
+@keyframes fullRotation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-360deg);}
+}
+
 .content {
   position: relative;
   z-index: 1;
