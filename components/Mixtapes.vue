@@ -2,9 +2,11 @@
   <section class="mixtapes" id="mixtapes">
     <div class="heading">
       <h2 class="jf-h1">Mixtapes</h2>
-      <h4 class="jf-lead">Curated Spotify playlists with custom cover artworks.</h4>
-      <p>An ongoing excercise mixing two of my greatest pasions, music and design.</p>
-      <p>Browse, listen, enjoy.</p>
+      <div class="heading-content">
+        <h4 class="jf-lead">Curated Spotify playlists with custom cover artworks.</h4>
+        <p>An ongoing excercise mixing two of my greatest pasions, music and design.</p>
+        <p>Browse, listen, enjoy.</p>
+      </div>
     </div>
     <div class="swiper">
       <div v-swiper:mySwiper="options">
@@ -62,8 +64,16 @@ export default {
       options: {
         centeredSlides: true,
         spaceBetween: 30,
-        slidesPerView: 3.5,
-        speed: 500
+        slidesPerView: 1.5,
+        speed: 500,
+        breakpoints: {
+          720: {
+            slidesPerView: 2.5
+          },
+          1280: {
+            slidesPerView: 3.5
+          },
+        }
       }
     };
   }
@@ -82,6 +92,22 @@ export default {
 .heading{
   @include container;
   padding-bottom: 40px;
+  h2{
+    color: white;
+    -webkit-text-fill-color: $black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    @include margin-bottom;
+  }
+  .heading-content{
+    max-width: 320px;
+  }
+}
+
+.swiper{
+  @include bp(s1280){
+    margin-top: -210px;
+  }
 }
 
 .mixtape{
