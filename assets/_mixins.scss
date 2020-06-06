@@ -54,6 +54,7 @@ $black: #262524;
 
 @mixin h1(){
   @include bold;
+  line-height: 1;
   font-size: 46px;
   @include bp(s720) {
     font-size: 60px;

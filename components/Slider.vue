@@ -88,5 +88,22 @@ export default {
       color: white;
     }
   }
+  &.about-slider{
+    .swiper-pagination, .swiper-button-prev, .swiper-button-next{
+      display: none;
+      @include bp(s720){
+        display: flex;
+      }
+    }
+    .swiper-image{
+      filter: grayscale(1);
+      opacity: 0.6;
+      transition: all 0.3s;
+      &:hover {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+  }
 }
 </style>

@@ -182,7 +182,7 @@ p {
 }
 .basic-animation {
   opacity: 0;
-  transform: translateY(200px);
+  transform: translateY(200px) skew(0deg, -5deg);
   @include transition(all, 2s);
   &.animated {
     opacity: 1;
