@@ -38,7 +38,7 @@ export default {
   data() {
     return {
       gallery: {
-        background: "light",
+        background: "about-slider",
         imgs: [
           "/about/me_working_hard.jpg",
           "/about/javier_castillo_working_in_tanger.jpg",
@@ -98,13 +98,6 @@ export default {
 }
 .image-container {
   width: 100%;
-  filter: grayscale(1);
-  opacity: 0.6;
-  transition: all 0.3s;
-  &:hover {
-    filter: grayscale(0);
-    opacity: 1;
-  }
   @include bp(s360) {
     position: absolute;
     right: 20px;
