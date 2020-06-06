@@ -27,7 +27,7 @@
         <h4
           class="jf-lead"
         >Nómada is an independent digital news media company with investigative reporters that covers politics, feminism, ecuality and culture in Guatemala.</h4>
-        <p>I have been helping them for the last two years with the development of spacial interactive coverages and technical support.</p>
+        <p>I have been helping them for the last two years with the development of special interactive coverages and technical support.</p>
         <span class="jf-label">Visit</span>
         <p>
           <a href="https://nomada.gt/">nomada.gt</a>
