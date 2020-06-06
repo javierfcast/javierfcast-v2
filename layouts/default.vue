@@ -58,34 +58,32 @@ html {
     font-size: 16px;
   }
 }
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
 *,
 *:before,
 *:after {
   box-sizing: border-box;
   margin: 0;
 }
-h1,
-.jf-h1 {
+h1, .jf-h1 {
   @include h1;
 }
-h2,
-.jf-h2 {
+h2, .jf-h2 {
   @include h2;
 }
-h3,
-.jf-h3 {
+h3, .jf-h3 {
   @include h3;
 }
-h4,
-.jf-h4 {
+h4, .jf-h4 {
   @include h4;
 }
-h5,
-.jf-h5 {
+h5, .jf-h5 {
   @include h5;
 }
-h6,
-.jf-h6 {
+h6, .jf-h6 {
   @include h6;
 }
 a {

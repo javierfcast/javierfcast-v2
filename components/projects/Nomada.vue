@@ -65,10 +65,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "./assets/_mixins.scss";
-.nomada{
-  width: 100vw;
-  overflow-x: hidden;
-}
 .quote {
   max-width: 240px;
   margin-left: auto;
