@@ -75,9 +75,11 @@ h2, .jf-h2 {
   @include h2;
 }
 h3, .jf-h3 {
+  line-height: 1.35;
   @include h3;
 }
 h4, .jf-h4 {
+  line-height: 1.5;
   @include h4;
 }
 h5, .jf-h5 {

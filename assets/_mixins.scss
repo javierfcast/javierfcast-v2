@@ -96,6 +96,7 @@ $black: #262524;
   }
 }
 @mixin h5{
+  line-height: 1.5;
   @include bold;
   font-size: 12px;
   @include bp(s720){

@@ -32,7 +32,7 @@
           <div class="separator" v-bind:class="{ active: isActive }"></div>
           <div class="content-three">
             <div class="bio anibasic" v-bind:class="{ active: isActive }">
-              <p>I'm a UI/UX designer and web developer from Guatemala. I love creating beautiful, fast, interactive websites.</p>
+              <h4>UI/UX designer and web developer. I love creating beautiful, performant, interactive websites.</h4>
             </div>
             <div class="separator" v-bind:class="{ active: isActive }"></div>
             <div class="feats">
@@ -40,12 +40,12 @@
                 <!-- <span>Read in:</span>
                 <a href="#">English</a> /
                 <a href="#">Español</a> -->
-                <span>Background from:</span>
-                <a href="#royalestudios">Royale Studios Branding</a>
+                <span>I was born in:</span>
+                <a href="#royalestudios">Guatemala City</a>
               </div>
               <div class="feat-2 anibasic" v-bind:class="{ active: isActive }">
                 <span>Currently in:</span>
-                <h5>Barcelona, Spain</h5>
+                <h5>Barcelona</h5>
               </div>
               <div class="separator" v-bind:class="{ active: isActive }"></div>
               <div class="follow anibasic" v-bind:class="{ active: isActive }">
@@ -115,7 +115,7 @@ a {
     padding-top: 40px;
   }
   @include bp(s1280) {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     display: flex;
     align-items: flex-end;
   }
@@ -237,13 +237,18 @@ a {
   flex-wrap: wrap;
   .bio {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 20px 20px 0;
     transition-delay: 2.3s;
     @include bp(s1280) {
       display: flex;
       align-items: center;
       border-right: 2px solid $black;
       width: 33.333%;
+    }
+    h4{
+      @include bp(s1280){
+        font-size: 18px;
+      }
     }
   }
   > .separator {

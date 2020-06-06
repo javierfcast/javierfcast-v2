@@ -114,15 +114,15 @@ export default {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     font-size: 24px;  
-    width: 40px;
-    height: 40px;
-    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    bottom: 0px;
     left: 65%;
     @include bp(s480){
       left: 70%;
       width: 60px;
       height: 60px;
-      bottom: 30px;
+      bottom: 20px;
     }
     @include bp(s720){
       font-size: 48px;
