@@ -40,8 +40,8 @@
                 <!-- <span>Read in:</span>
                 <a href="#">English</a> /
                 <a href="#">Español</a> -->
-                <span>I was born in:</span>
-                <a href="#royalestudios">Guatemala City</a>
+                <span>I'm from:</span>
+                <h5>Guatemala City</h5>
               </div>
               <div class="feat-2 anibasic" v-bind:class="{ active: isActive }">
                 <span>Currently in:</span>
