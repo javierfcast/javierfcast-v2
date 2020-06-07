@@ -19,7 +19,7 @@
           <span>and Vue.</span>
         </p>
         <p>Building Royale Studios, I've also had to lead teams, do project management and even get into human resources and accounting.</p>
-        <p>I love coffee, traveling, painting, playing the piano and curating playlists on spotify to create covers for them.</p>
+        <p>I love coffee, traveling, <a href="https://instagram.com/javierfcast.art" target="_blank" rel="noopener noreferrer">painting</a>, playing the piano and <a href="#mixtapes">curating playlists on Spotify</a> to create covers for them.</p>
       </div>
       <div class="image-container animate basic-animation">
         <Slider v-bind="gallery" />
