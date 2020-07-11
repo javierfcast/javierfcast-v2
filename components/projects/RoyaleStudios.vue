@@ -1,11 +1,11 @@
 <template>
-  <div class="work animate">
+  <div class="royale-studios animate" id="royale-studios">
     <div class="jf-container jf-container--flex">
       <div class="work-heading">
         <h2 class="work-title">Work</h2>
         <div class="work-stamp">&amp;</div>
       </div>
-      <div class="royale-studios content" id="royale-studios">
+      <div class="content">
         <h3 class="jf-h1">Royale Studios</h3>
         <span class="jf-label">Digital Agency</span>
         <div class="jf-spacer"></div>
@@ -104,7 +104,6 @@ export default {
 .content {
   position: relative;
   z-index: 1;
-  color: #FFD2C8;
   @include transition(all, 2s);
   transition-delay: 0.5s;
   @include bp(s360) {
@@ -116,13 +115,6 @@ export default {
   }
   .jf-h1 {
     white-space: nowrap;
-  }
-  .jf-date__line {
-    background: #FFD2C8;
-  }
-  a {
-    color: #FFD2C8;
-    border-bottom: 2px solid #FFD2C8;
   }
 }
 .project-images {

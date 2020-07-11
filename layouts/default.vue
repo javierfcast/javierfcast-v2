@@ -15,15 +15,16 @@ export default {
 
     let observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-        if (entry.intersectionRatio > 0.1) {
+        if (entry.intersectionRatio > 0.2) {
           console.log(
             entry.target.className + " in view and trying version 0.3"
           );
           entry.target.classList.add("animated");
-          if (entry.target.classList.contains("work")){
+          if (entry.target.classList.contains("royale-studios")){
             console.log('seeing work');
             document.querySelector("#background").style.background = "#262524";
             document.querySelector("#experience").classList.add("inverted");
+            document.querySelector(".royale-studios").classList.add("inverted");
             document.querySelector(".quote").classList.add("inverted");
           }
           if (entry.target.classList.contains("yalo")){
@@ -36,10 +37,11 @@ export default {
         } else {
           console.log(entry.target.className + " out of view");
           //entry.target.classList.remove("animated");
-          if (entry.target.classList.contains("work")){
+          if (entry.target.classList.contains("royale-studios")){
             console.log('work is out of sight');
             document.querySelector("#background").style.background = "white";
             document.querySelector("#experience").classList.remove("inverted");
+            document.querySelector(".royale-studios").classList.remove("inverted");
             document.querySelector(".quote").classList.remove("inverted");
           }
           if (entry.target.classList.contains("yalo")){
@@ -50,7 +52,7 @@ export default {
           }
         }
       });
-    }, {threshold: 0.1});
+    }, {threshold: 0.2});
 
     animateMe.forEach(el => {
       observer.observe(el);

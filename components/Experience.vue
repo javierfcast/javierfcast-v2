@@ -181,7 +181,7 @@
   }
 }
 
-.experience.reversed{
+.experience.inverted{
   color: white;
   .marquee{
     border-bottom: 1px solid white;
