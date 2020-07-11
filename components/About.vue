@@ -52,16 +52,12 @@ export default {
   z-index: 2;
   @include padding-right;
   @include bp(s360) {
-    badding-bottom: 0;
+    padding-bottom: 0;
     padding-top: 80px;
     width: 75%;
   }
   @include bp(s720) {
-    padding-top: 160px;
     width: 70%;
-  }
-  @include bp(s1280) {
-    padding-top: 160px;
   }
   h2,
   h3 {
