@@ -65,22 +65,7 @@ export default {
 
 .royale-studios {
   position: relative;
-  &:before {
-    content: "";
-    background: #f2f2f2;
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    @include transition(all, 2s);
-    transition-delay: 0.5s;
-  }
   &.animated {
-    &:before {
-      width: 100%;
-      background: #262524;
-    }
     a {
       color: #FFD2C8;
       border-bottom: 2px solid #FFD2C8;

@@ -8,6 +8,7 @@
     <!-- <Traveling/> -->
     <Mixtapes/>
     <Contact/>
+    <Background/>
   </section>
 </template>
 <script>
@@ -19,6 +20,7 @@ import Fieldnotes from "~/components/Fieldnotes.vue";
 import Traveling from "~/components/Traveling.vue";
 import Mixtapes from "~/components/Mixtapes.vue";
 import Contact from "~/components/Contact.vue";
+import Background from "~/components/Background.vue";
 
 export default {
   components: {
@@ -29,7 +31,8 @@ export default {
     Fieldnotes,
     Traveling,
     Mixtapes,
-    Contact
+    Contact,
+    Background
   }
 };
 </script>

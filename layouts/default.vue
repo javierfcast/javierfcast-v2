@@ -20,6 +20,10 @@ export default {
             entry.target.className + " in view and trying version 0.3"
           );
           entry.target.classList.add("animated");
+          if (entry.target.classList.contains("royale-studios")){
+            console.log('seeing work');
+            document.querySelector("#background").style.background = "black";
+          }
           observer.unobserve(entry.target);
         } else {
           console.log(entry.target.className + " out of view");
