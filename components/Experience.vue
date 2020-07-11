@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="marquee inverted">
+    <div class="marquee reversed">
       <div class="marquee__inner" aria-hidden="true">
         <div class="marquee__item">
           <span>Web development</span>
@@ -141,7 +141,7 @@
   --offset: 20vw;
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));
-  &.inverted{
+  &.reversed{
     --move-initial: calc(-50% + var(--offset));
     --move-final: calc(-25% + var(--offset));
   }
@@ -181,7 +181,7 @@
   }
 }
 
-.experience.inverted{
+.experience.reversed{
   color: white;
   .marquee{
     border-bottom: 1px solid white;

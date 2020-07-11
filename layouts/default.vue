@@ -13,9 +13,9 @@ export default {
     //   threshold: 0
     // };
 
-    let observerCallback = (entries, observer) => {
+    let observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
-        if (entry.intersectionRatio > 0) {
+        if (entry.intersectionRatio > 0.1) {
           console.log(
             entry.target.className + " in view and trying version 0.3"
           );
@@ -35,7 +35,7 @@ export default {
           //observer.unobserve(entry.target);
         } else {
           console.log(entry.target.className + " out of view");
-          entry.target.classList.remove("animated");
+          //entry.target.classList.remove("animated");
           if (entry.target.classList.contains("work")){
             console.log('work is out of sight');
             document.querySelector("#background").style.background = "white";
@@ -50,9 +50,7 @@ export default {
           }
         }
       });
-    };
-
-    let observer = new IntersectionObserver(observerCallback);
+    }, {threshold: 0.1});
 
     animateMe.forEach(el => {
       observer.observe(el);

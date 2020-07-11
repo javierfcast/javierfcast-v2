@@ -88,39 +88,11 @@ export default {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    font-size: 24px;  
-    width: 60px;
-    height: 60px;
-    bottom: 0px;
+    font-size: 5vw;  
+    width: 12vw;
+    height: 12vw;
+    bottom: 10%;
     left: 65%;
-    @include bp(s480){
-      left: 70%;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-    }
-    @include bp(s720){
-      font-size: 48px;
-      width: 80px;
-      height: 80px;
-      bottom: 40px;
-    }
-    @include bp(s960){
-      width: 100px;
-      height: 100px;
-      bottom: 60px;
-    }
-    @include bp(s1280){
-      font-size: 52px;
-      width: 120px;
-      height: 120px;
-    }
-    @include bp(s1600){
-      font-size: 72px;
-      width: 144px;
-      height: 144px;
-      bottom: 72px;
-    }
   }
 }
 
