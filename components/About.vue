@@ -2,24 +2,10 @@
   <section class="about" id="about">
     <div class="jf-container">
       <div class="content">
-        <h2 class="jf-h1">About me</h2>
+        <h2 class="jf-label">About me</h2>
         <h3>I am the co-founder and creative director of Royale Studios. I have 10+ years of experience building all kinds of digital projects, from websites and e-commerce sites to apps and web apps.</h3>
-        <p>I have experience in:</p>
-         <p class="talents">
-          <span>Art Direction, </span>
-          <span>branding, </span>
-          <span>interaction, </span>
-          <span>UI/UX, </span>
-          <span>project management, </span>
-          <span>creative development, </span>
-          <span>HTML, CSS, Js, </span>
-          <span>Wordpress, </span>
-          <span>Woocommerce, </span>
-          <span>React, </span>
-          <span>and Vue.</span>
-        </p>
-        <p>Building Royale Studios, I've also had to lead teams, do project management and even get into human resources and accounting.</p>
-        <p>I love coffee, traveling, <a href="https://instagram.com/javierfcast.art" target="_blank" rel="noopener noreferrer">painting</a>, playing the piano and <a href="#mixtapes">curating playlists on Spotify</a> to create covers for them.</p>
+        <h3>I enjoy collaborating with people that is building cool, hipster projects around technology, art, culture, and politics, understand the importance of design and aesthethics, and is liberal and forward thinking.</h3>
+        <h3>I love coffee, craft beers, traveling, <a href="https://instagram.com/javierfcast.art" target="_blank" rel="noopener noreferrer">painting</a>, playing the piano and <a href="#mixtapes">listening to music</a>.</h3>
       </div>
       <div class="image-container animate basic-animation">
         <Slider v-bind="gallery" />
@@ -75,7 +61,7 @@ export default {
     width: 70%;
   }
   @include bp(s1280) {
-    padding-top: 220px;
+    padding-top: 160px;
   }
   h2,
   h3 {

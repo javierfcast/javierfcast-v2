@@ -2,6 +2,7 @@
   <section>
     <Hero/>
     <About/>
+    <Experience/>
     <Work/>
     <!-- <Fieldnotes/> -->
     <!-- <Traveling/> -->
@@ -12,6 +13,7 @@
 <script>
 import Hero from "~/components/Hero.vue";
 import About from "~/components/About.vue";
+import Experience from "~/components/Experience.vue";
 import Work from "~/components/Work.vue";
 import Fieldnotes from "~/components/Fieldnotes.vue";
 import Traveling from "~/components/Traveling.vue";
@@ -22,6 +24,7 @@ export default {
   components: {
     Hero,
     About,
+    Experience,
     Work,
     Fieldnotes,
     Traveling,
