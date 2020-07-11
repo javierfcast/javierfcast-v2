@@ -61,7 +61,7 @@ export default {
   position: relative;
   &:before {
     content: "";
-    background: #f2f2f2;
+    background: rgba(0,0,0,0.2);
     position: absolute;
     width: 0%;
     height: 100%;
@@ -73,6 +73,14 @@ export default {
   &.animated {
     &:before {
       width: 80%;
+    }
+    color: white;
+    a{
+      color: white;
+      border-bottom-color: white;
+    }
+    .jf-date__line{
+      background: white;
     }
   }
 }

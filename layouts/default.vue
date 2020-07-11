@@ -26,6 +26,12 @@ export default {
             document.querySelector("#experience").classList.add("inverted");
             document.querySelector(".quote").classList.add("inverted");
           }
+          if (entry.target.classList.contains("yalo")){
+            console.log('seeing yalo');
+            document.querySelector("#background").style.background = "#5751EA";
+            document.querySelector(".nomada").classList.add("inverted");
+            document.querySelector(".adherente").classList.add("inverted");
+          }
           //observer.unobserve(entry.target);
         } else {
           console.log(entry.target.className + " out of view");
@@ -35,6 +41,12 @@ export default {
             document.querySelector("#background").style.background = "white";
             document.querySelector("#experience").classList.remove("inverted");
             document.querySelector(".quote").classList.remove("inverted");
+          }
+          if (entry.target.classList.contains("yalo")){
+            console.log('yalo is out of sight');
+            document.querySelector("#background").style.background = "white";
+            document.querySelector(".nomada").classList.remove("inverted");
+            document.querySelector(".adherente").classList.remove("inverted");
           }
         }
       });
@@ -213,4 +225,19 @@ p {
     }
   }
 }
+
+.inverted{
+  &:before {
+    width: 80%;
+  }
+  color: white;
+  a{
+    color: white;
+    border-bottom-color: white;
+  }
+  .jf-date__line{
+    background: white;
+  }
+}
+
 </style>

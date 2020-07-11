@@ -39,7 +39,7 @@
   position: relative;
   &:before {
     content: "";
-    background: #f2f2f2;
+    background: rgba(0,0,0,0.05);
     position: absolute;
     width: 0%;
     height: 50%;
