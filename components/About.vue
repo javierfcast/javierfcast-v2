@@ -65,15 +65,9 @@ export default {
   }
   h2,
   h3 {
-    margin-bottom: 20px;
-    @include bp(s480) {
-      margin-bottom: 40px;
-    }
-    @include bp(s960) {
-      margin-bottom: 60px;
-    }
-    @include bp(s1280) {
-      margin-bottom: 80px;
+    @include text-margin-bottom;
+    &:last-child{
+      margin-bottom: 0;
     }
   }
   p {

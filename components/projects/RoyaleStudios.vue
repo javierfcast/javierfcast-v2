@@ -130,11 +130,15 @@ export default {
       height: 80px;
       bottom: 40px;
     }
+    @include bp(s960){
+      width: 100px;
+      height: 100px;
+      bottom: 60px;
+    }
     @include bp(s1280){
-      font-size: 48px;
-      width: 80px;
-      height: 80px;
-      bottom: 40px;
+      font-size: 52px;
+      width: 120px;
+      height: 120px;
     }
     @include bp(s1600){
       font-size: 72px;

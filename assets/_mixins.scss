@@ -187,6 +187,18 @@ $black: #262524;
     margin-bottom: 120px; 
   }
 }
+@mixin text-margin-bottom{
+  margin-bottom: 20px;
+  @include bp(s480) {
+    margin-bottom: 40px;
+  }
+  @include bp(s960) {
+    margin-bottom: 60px;
+  }
+  @include bp(s1280) {
+    margin-bottom: 80px;
+  }
+}
 
 @mixin container{
   max-width: 1600px;
