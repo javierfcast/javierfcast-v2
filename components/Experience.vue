@@ -180,4 +180,15 @@
     transform: translate3d(var(--move-final), 0, 0);
   }
 }
+
+.experience.inverted{
+  color: white;
+  .marquee{
+    border-bottom: 1px solid white;
+    &.first{
+      border-top: 1px solid white;
+    }
+  }
+}
+
 </style>

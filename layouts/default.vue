@@ -20,14 +20,22 @@ export default {
             entry.target.className + " in view and trying version 0.3"
           );
           entry.target.classList.add("animated");
-          if (entry.target.classList.contains("royale-studios")){
+          if (entry.target.classList.contains("work")){
             console.log('seeing work');
-            document.querySelector("#background").style.background = "black";
+            document.querySelector("#background").style.background = "#262524";
+            document.querySelector("#experience").classList.add("inverted");
+            document.querySelector(".quote").classList.add("inverted");
           }
-          observer.unobserve(entry.target);
+          //observer.unobserve(entry.target);
         } else {
           console.log(entry.target.className + " out of view");
           entry.target.classList.remove("animated");
+          if (entry.target.classList.contains("work")){
+            console.log('work is out of sight');
+            document.querySelector("#background").style.background = "white";
+            document.querySelector("#experience").classList.remove("inverted");
+            document.querySelector(".quote").classList.remove("inverted");
+          }
         }
       });
     };

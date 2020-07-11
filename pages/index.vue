@@ -1,5 +1,6 @@
 <template>
   <section>
+    <Background/>
     <Hero/>
     <About/>
     <Experience/>
@@ -8,7 +9,7 @@
     <!-- <Traveling/> -->
     <Mixtapes/>
     <Contact/>
-    <Background/>
+    
   </section>
 </template>
 <script>

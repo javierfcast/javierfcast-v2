@@ -76,19 +76,23 @@ export default {
   @include bp(s1280) {
     max-width: 420px;
   }
-  &:after {
+  &:before {
     position: absolute;
     width: 200px;
     height: 200px;
-    background: #f2f2f2;
+    background: rgba(196,196,196,0.2);
     border-radius: 50%;
-    z-index: -1;
     content: "";
     top: 20px;
     right: -100px;
   }
   h3 {
     text-decoration: underline;
+    position: relative;
+    z-index: 1;
+  }
+  &.inverted{
+    color: white;
   }
 }
 .content {
