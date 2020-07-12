@@ -70,19 +70,6 @@ export default {
     @include transition(all, 2s);
     transition-delay: 0.5s;
   }
-  &.animated {
-    &:before {
-      width: 80%;
-    }
-    color: white;
-    a{
-      color: white;
-      border-bottom-color: white;
-    }
-    .jf-date__line{
-      background: white;
-    }
-  }
 }
 .title-container {
   position: relative;

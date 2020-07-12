@@ -30,6 +30,7 @@ export default {
           if (entry.target.classList.contains("yalo")){
             console.log('seeing yalo');
             document.querySelector("#background").style.background = "#5751EA";
+            document.querySelector(".yalo").classList.add("inverted");
             document.querySelector(".nomada").classList.add("inverted");
             document.querySelector(".adherente").classList.add("inverted");
           }
@@ -47,6 +48,7 @@ export default {
           if (entry.target.classList.contains("yalo")){
             console.log('yalo is out of sight');
             document.querySelector("#background").style.background = "white";
+            document.querySelector(".yalo").classList.remove("inverted");
             document.querySelector(".nomada").classList.remove("inverted");
             document.querySelector(".adherente").classList.remove("inverted");
           }
