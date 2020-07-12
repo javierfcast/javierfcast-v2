@@ -33,7 +33,7 @@ export default {
       }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", href: "/favicon.svg" },
       {
         rel: "stylesheet",
         href:
