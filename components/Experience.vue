@@ -9,37 +9,29 @@
         <div class="marquee__item">
           <span>Art direction</span>
           <span>UI/UX design</span>
-          <span>Branding</span>
-          <span>Web design</span>
-          <span>Illustration</span>
-          <span>Branding</span>
+          <span>Interaction</span>
+          <span>Web designer</span>
           <span>Project Management</span>
         </div>
         <div class="marquee__item">
           <span>Art direction</span>
           <span>UI/UX design</span>
-          <span>Branding</span>
-          <span>Web design</span>
-          <span>Illustration</span>
-          <span>Branding</span>
+          <span>Interaction</span>
+          <span>Web designer</span>
           <span>Project Management</span>
         </div>
         <div class="marquee__item">
           <span>Art direction</span>
           <span>UI/UX design</span>
-          <span>Branding</span>
-          <span>Web design</span>
-          <span>Illustration</span>
-          <span>Branding</span>
+          <span>Interaction</span>
+          <span>Web designer</span>
           <span>Project Management</span>
         </div>
         <div class="marquee__item">
           <span>Art direction</span>
           <span>UI/UX design</span>
-          <span>Branding</span>
-          <span>Web design</span>
-          <span>Illustration</span>
-          <span>Branding</span>
+          <span>Interaction</span>
+          <span>Web designer</span>
           <span>Project Management</span>
         </div>
       </div>
@@ -47,7 +39,8 @@
     <div class="marquee reversed">
       <div class="marquee__inner" aria-hidden="true">
         <div class="marquee__item">
-          <span>Web development</span>
+          <span>Creative Developer</span>
+          <span>Front-end</span>
           <span>HTML</span>
           <span>CSS</span>
           <span>Javascript</span>
@@ -55,7 +48,8 @@
           <span>Vue</span>
         </div>
         <div class="marquee__item">
-          <span>Web development</span>
+          <span>Creative Developer</span>
+          <span>Front-end</span>
           <span>HTML</span>
           <span>CSS</span>
           <span>Javascript</span>
@@ -63,7 +57,8 @@
           <span>Vue</span>
         </div>
         <div class="marquee__item">
-          <span>Web development</span>
+          <span>Creative Developer</span>
+          <span>Front-end</span>
           <span>HTML</span>
           <span>CSS</span>
           <span>Javascript</span>
@@ -71,7 +66,8 @@
           <span>Vue</span>
         </div>
         <div class="marquee__item">
-          <span>Web development</span>
+          <span>Creative Developer</span>
+          <span>Front-end</span>
           <span>HTML</span>
           <span>CSS</span>
           <span>Javascript</span>
