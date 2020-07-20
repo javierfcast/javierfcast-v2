@@ -166,7 +166,10 @@ p {
 .jf-spacer--text{
   @include text-margin-bottom;
 }
-
+.jf-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 .jf-date {
   display: flex;
   align-items: center;

@@ -189,14 +189,8 @@ $black: #262524;
 }
 @mixin text-margin-bottom{
   margin-bottom: 20px;
-  @include bp(s480) {
-    margin-bottom: 40px;
-  }
   @include bp(s960) {
-    margin-bottom: 60px;
-  }
-  @include bp(s1280) {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 
@@ -209,3 +203,9 @@ $black: #262524;
   @include padding-right;
 }
 
+@mixin container-slim{
+  max-width: 1600px;
+  margin: 0 auto;
+  @include padding-left;
+  @include padding-right;
+}
