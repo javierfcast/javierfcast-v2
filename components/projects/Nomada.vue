@@ -1,6 +1,6 @@
 <template>
   <div class="nomada">
-    <div class="jf-container no-padding-bottom">
+    <div class="jf-container no-padding-top no-padding-bottom">
       <div class="quote">
         <h3>
           I love to explore how editorial design can influence UI/UX

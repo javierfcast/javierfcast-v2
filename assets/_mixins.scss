@@ -169,7 +169,7 @@ $black: #262524;
   }
 }
 @mixin margin-top{
-  margin-top: 40px;
+  margin-top: 60px;
   @include bp(s960){
     margin-top: 80px;
   }
@@ -177,9 +177,8 @@ $black: #262524;
     margin-top: 120px; 
   }
 }
-
 @mixin margin-bottom{
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   @include bp(s960){
     margin-bottom: 80px;
   }
