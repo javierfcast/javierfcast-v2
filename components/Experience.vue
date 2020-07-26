@@ -127,7 +127,6 @@
   width: 100%;
   @include padding-left;
   @include padding-right;
-  padding-bottom: 20px;
 }
 .marquee {
   position: relative;

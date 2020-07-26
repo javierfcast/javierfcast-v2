@@ -127,7 +127,7 @@ $black: #262524;
   }
 }
 @mixin padding-top{
-  padding-top: 40px;
+  padding-top: 60px;
   @include bp(s960){
     padding-top: 80px;
   }
@@ -136,7 +136,7 @@ $black: #262524;
   }
 }
 @mixin padding-bottom{
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   @include bp(s960){
     padding-bottom: 80px;
   }
