@@ -33,6 +33,11 @@
     margin-bottom: 10px;
     display: block;
   }
+  .social{
+    .social-link{
+      line-height: 2;
+    }
+  }
 }
 
 </style>
