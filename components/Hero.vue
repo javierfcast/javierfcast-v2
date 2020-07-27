@@ -1,5 +1,6 @@
 <template>
   <section class="hero">
+    <RoyaleAnimation/>
     <div class="container">
       <div class="content-container" v-bind:class="{ active: isActive }">
         <div class="content">
@@ -77,7 +78,6 @@
         </div>
       </div>
     </div>
-    <RoyaleAnimation/>
   </section>
 </template>
 
@@ -121,6 +121,7 @@ a {
   }
 }
 .container {
+  position: relative;
   @include bp(s1280) {
     margin: 0 auto;
     width: 1040px;

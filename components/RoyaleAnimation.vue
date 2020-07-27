@@ -419,7 +419,6 @@ export default {
   left: 0;
   overflow: hidden;
   background: #FB3449;
-  z-index: -1;
   .svg-container {
     svg {
       @include bp(s1920) {
