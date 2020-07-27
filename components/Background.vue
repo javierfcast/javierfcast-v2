@@ -8,7 +8,6 @@
 
   .background{
     position: fixed;
-    background: white;
     z-index: -100;
     top: 0;
     left: 0;
