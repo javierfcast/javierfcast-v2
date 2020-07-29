@@ -15,10 +15,9 @@
             <span class="jf-label second-date">Now</span>
           </div>
           <div class="jf-spacer"></div>
-          <h4
-            class="jf-lead"
-
-          >Posfly is a point of sale (POS) solution to take orders and keep track of sales, kitchen, staff and much more.</h4>
+          <h4 class="jf-lead">
+            Posfly is a point of sale (POS) solution to take orders and keep track of sales, kitchen, staff and much more.
+          </h4>
           <p>I've been developing Posfly as a side project, and a working prototype made with React and Firebase is now available.</p>
           <span class="jf-label">Visit</span>
           <p>
