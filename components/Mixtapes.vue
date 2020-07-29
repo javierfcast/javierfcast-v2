@@ -113,7 +113,7 @@ export default {
   z-index: 2;
   h2{
     color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: white;
     font-size: 16vw;
   }
