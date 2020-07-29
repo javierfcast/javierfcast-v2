@@ -1,7 +1,7 @@
 <template>
   <section class="mixtapes" id="mixtapes">
     <div class="heading">
-      <h2 class="jf-h1">Mixtapes</h2>
+      <h2>Mixtapes</h2>
     </div>
     <div class="content-container">
       <div class="content">
@@ -115,6 +115,7 @@ export default {
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+    font-size: 16vw;
   }
 }
 
