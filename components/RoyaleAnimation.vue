@@ -435,7 +435,7 @@ export default {
         transition-delay: .5s;
       }
        #rectangle_small {
-        transform: translate(-50vw, -50vw);
+        transform: translate(-150vw, -150vw);
         @include transition(all, 5s);
         transition-delay: .5s;
       }
@@ -457,12 +457,12 @@ export default {
         animation-timing-function: linear;
       }
       #rectangle_pink{
-        transform: translate(-50vw, 50vw);
+        transform: translate(-100vw, 100vw);
         @include transition(all, 2s);
         transition-delay: 1s;
       }
       #bordered{
-        transform: translate(50vw, 50vw);
+        transform: translate(100vw, 100vw);
         @include transition(all, 2s);
         transition-delay: 1s;
       }
