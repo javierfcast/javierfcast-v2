@@ -4,7 +4,7 @@
       <div class="content">
         <h2 class="jf-label">About me</h2>
         <h3>I am the co-founder and creative director of Royale Studios. I have 10+ years of experience building all kinds of digital projects, from websites and e-commerce sites to apps and web apps.</h3>
-        <h3>I enjoy collaborating with bold, forward thinking people that understands the importance of design and aesthethics ins the success of a project.</h3>
+        <h3>I enjoy collaborating with bold, forward thinking people that understands the importance of design and aesthethics in the success of a project.</h3>
         <h3>Specially interested in working on projects around design, technology, education, art, culture, social inclusion and politics.</h3>
         <h3>I love coffee, craft beers, traveling, <a href="https://instagram.com/javierfcast.art" target="_blank" rel="noopener noreferrer">painting</a>, playing the piano and <a href="#mixtapes">listening to all types of music</a>.</h3>
       </div>

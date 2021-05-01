@@ -38,26 +38,15 @@
             <p>The platform serves customers, waiters, chefs, and restaurant owners. </p>
             <p>Each type of user has different actions that were mapped out to make sure each flow  and it was important to define each flow to make sure it was as simple and clear as posible.</p>
           </div>
-          <div class="jf-flex">
-            <div class="jf-cell jf-cell--3">
-              <p>Allow waiters to take orders and send them to the kitchen.</p>
-            </div>
-            <div class="jf-cell jf-cell--3">
-              <p>Allow customers to see the restaurant's menu and order by themselves from their cellphones.</p>
-            </div>
-            <div class="jf-cell jf-cell--3">
-              <p>Allow chefs to see orders, prepare them and let waiters know when they are ready to be served.</p>
-            </div>
-            <div class="jf-cell jf-cell--3">
-              <p>Allow waiters and customers to review the check and close the transaction.</p>
-            </div>
-            <div class="jf-cell jf-cell--3">
-              <p>Allow restaurant owners to setup everything.</p>
-            </div>
-            <div class="jf-cell jf-cell--3">
-              <p>Allow restaurant owners to see reports about everything.</p>
-            </div>
-          </div>
+          <ol>
+            <li>Allow waiters to take orders and send them to the kitchen.</li>
+            <li>Allow customers to see the restaurant's menu and order by themselves from their cellphones.</li>
+            <li>Allow chefs to see orders, prepare them and let waiters know when they are ready to be served.</li>
+            <li>Allow waiters and customers to review the check and close the transaction.</li>
+            <li>Allow restaurant owners to setup everything.</li>
+            <li>Allow restaurant owners to see reports about everything.</li>
+          </ol>
+          <img src="image">
         </div>
       </div>
     </div>
