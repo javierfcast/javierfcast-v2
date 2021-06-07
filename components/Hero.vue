@@ -45,14 +45,14 @@
                 <h5>Guatemala City</h5>
               </div>
               <div class="feat-2 anibasic" v-bind:class="{ active: isActive }">
-                <span>Currently in:</span>
-                <h5>Barcelona</h5>
+                <!-- <span>Currently in:</span>
+                <h5>Barcelona</h5> -->
               </div>
               <div class="separator" v-bind:class="{ active: isActive }"></div>
               <div class="follow anibasic" v-bind:class="{ active: isActive }">
                 <span class="jf-label">Follow me</span>
                 <div class="social">
-                  <a class="social-link" target="_blank" href="https://instagram.com/javierfcast/">Instagram</a>
+                  <a class="social-link" target="_blank" href="https://instagram.com/javiercastillo.gt/">Instagram</a>
                   <a class="social-link" target="_blank" href="https://twitter.com/javierfcast/">Twitter</a>
                   <a class="social-link" target="_blank" href="https://behance.net/javierfcast/">Behance</a>
                   <a class="social-link" target="_blank" href="https://dribbble.com/javierfcast">Dribbble</a>

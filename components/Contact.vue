@@ -5,7 +5,7 @@
     <div class="jf-spacer"></div>
     <span class="jf-label">Follow me at</span>
     <div class="social">
-      <a class="social-link" target="_blank" href="https://instagram.com/javierfcast/">Instagram</a>
+      <a class="social-link" target="_blank" href="https://instagram.com/javiercastillo.gt/">Instagram</a>
       <a class="social-link" target="_blank" href="https://twitter.com/javierfcast/">Twitter</a>
       <a class="social-link" target="_blank" href="https://behance.net/javierfcast/">Behance</a>
       <a class="social-link" target="_blank" href="https://dribbble.com/javierfcast">Dribbble</a>
